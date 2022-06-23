@@ -6,7 +6,6 @@ import com.trendyol.page.HomePage;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -25,7 +24,7 @@ public class ForAllBoutiqueLinkControlTest extends AbstractTrendyol
         HomePage loginPage = new HomePage(driver);
         String currentUrl = null;
 
-        File file = new File("/Users/berivankahraman/IdeaProjects/insider_test/target"+ returnSessionId());
+        File file = new File("./temp/"+ returnSessionId() + ".csv");
         List<String[]> data = new ArrayList<String[]>();
         for (int i = 0; i < loginPage.boutiqueList.size(); i++) {
 

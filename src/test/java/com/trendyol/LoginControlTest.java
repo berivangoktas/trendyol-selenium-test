@@ -9,7 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.Random;
 @ExtendWith(ReportExtension.class)
-public class LoginTest extends AbstractTrendyol
+public class LoginControlTest extends AbstractTrendyol
 {
     private static final String ERROR_MESSAGE_FOR_MISSING_INPUT = "Lütfen geçerli bir e-posta adresi giriniz.";
     private static final String ERROR_MESSAGE_FOR_MISSING_PASSWORD = "Lütfen şifrenizi giriniz.";
